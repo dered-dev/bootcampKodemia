@@ -1,0 +1,430 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0 40px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 3.25rem;
+    height: 3.25rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.filled-orange {
+    background-color: #ff4800;
+    border: 2px solid #ff4800;
+}
+
+.outline-orange {
+    background-color: transparent;
+    border: 2px solid #ff4800;
+    color: #ff4800;
+
+}
+
+.rounded {
+    border-radius: 2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* Generals */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+}
+
+.contact__header {
+    display: none;
+    width: 100%;
+}
+
+.contact__header .header_text {
+    margin-top: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: .745em;
+    line-height: 1em;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.contact__header .header_text:first-of-type {
+    margin-right: 1em;
+}
+
+.contact__header .header_text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.inner__general {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px;
+}
+
+.top__header {
+    background: #fff;
+    color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .2);
+}
+
+.top__header .wrap__contact__header .inner__general:first-of-type {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.top__header .wrap__contact__header {
+
+    background-color: #ff4800;
+}
+
+.btn__donate {
+    text-decoration: #fff;
+    background: #262222;
+    white-space: nowrap;
+}
+
+.top__header .wrap__header__menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+.header .logo__header {
+    display: inline-block;
+    font-size: 0;
+    vertical-align: top;
+}
+
+.header__menu {
+    display: none;
+}
+
+.ctn__stage {
+    margin-top: 113px;
+    min-height: 400px;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-image: url('../img/hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.ctn__stage::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.ctn__stage .inner__general {
+    position: relative;
+    z-index: 4;
+}
+
+.ctn__stage .title__stage {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.ctn__stage .subtitle__stage {
+    font-size: 2rem;
+}
+
+.ctn__stage .description__stage {
+    line-height: 1.5em;
+    font-weight: 500;
+}
+
+.ctn__option__cards {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* cards */
+
+.list__cards {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.list__cards .card {
+    padding: 0 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.list__cards .inner__card {
+    background-color: #fff;
+    border-radius: 1.5rem;
+    background-color: #ecf2f5;
+    padding: 2rem;
+}
+
+.list__cards .icon__card:nth-of-type(2) {
+    display: none;
+}
+
+.icon__card {
+    height: 55px;
+    width: 55px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 55px 55px;
+}
+
+.icon__card.hands.gray__icon {
+    background-image: url('../img/hands-gray.png');
+}
+
+.icon__card.heart.gray__icon {
+    background-image: url('../img/donation-gray.png');
+}
+
+.icon__card.cash.gray__icon {
+    background-image: url('../img/charity-gray.png');
+}
+
+
+.list__cards .card .title__card {
+    color: #262625;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.list__cards .card .description__card {
+    font-size: .875rem;
+    color: #8e8e8e;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.ctn__welcome{
+    min-height: 400px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-image: url('../img/hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+.ctn__welcome:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #262222;
+    z-index: 1;
+    opacity: .9;
+}
+.ctn__welcome .inner__general{
+    position: relative;
+    z-index: 2;
+}
+
+/* card article */
+.card__article {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.card__article .left__card,
+.card__article .right__card {
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.card__article .left__card{
+    flex-direction: column;
+    flex-flow: wrap;
+}
+.card__article .title__article{
+    position: relative;
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+}
+.card__article .title__article:after{
+    content: '';
+    border-radius: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 4rem;
+    height: 5px;
+    background-color: #ff5a00;
+}
+.card__article .description__article{
+    line-height: 1.5em;
+    font-size: .875em;
+    color: #bcbcbc;
+    margin-bottom: 2.5em;
+}
+
+
+@media screen and (min-width: 768px) {
+    .contact__header {
+        display: inline-block;
+    }
+
+    .top__header .inner__general:first-of-type {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+    .top__header .wrap__header__menu {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .header__menu {
+        display: inline-block;
+    }
+
+    .header__menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .header__menu li {
+        display: inline-block;
+    }
+
+    .header__menu li a {
+        font-size: .875rem;
+        font-weight: 600;
+        line-height: 1;
+        color: #262626;
+        text-decoration: none;
+        transition: color .35s;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        line-height: 2rem;
+    }
+
+
+    .ctn__stage .title__stage {
+        font-size: 6rem;
+    }
+
+    .ctn__stage .subtitle__stage {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .ctn__stage .description__stage {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .ctn__stage .title__stage,
+    .ctn__stage .subtitle__stage,
+    .ctn__stage .description__stage {
+        max-width: 70%;
+    }
+
+    .ctn__stage {
+        margin-top: 148px;
+    }
+
+    .ctn__option__cards {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .ctn__option__cards .list__cards {
+        flex-direction: row;
+    }
+
+    .ctn__option__cards .list__cards .card {
+        min-width: 33.333333%;
+
+    }
+    .card__article{
+        flex-direction: inherit;
+    }
+    .card__article .left__card,
+    .card__article .right__card {
+        min-width: 50%;
+        width: 50%;
+    }
+    .card__article .left__card{
+        padding-left: 0;
+    }
+    .card__article .right__card{
+        padding-right: 0;
+    }
+
+    .ctn__welcome{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    .list__cards .card{
+        margin-bottom: 0;
+    }
+    .top__header .wrap__contact__header{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+
+}
+

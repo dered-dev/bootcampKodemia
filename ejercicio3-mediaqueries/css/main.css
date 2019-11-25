@@ -1,0 +1,37 @@
+.square {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    border-radius: 50%;
+    transition: all linear .5s;
+}
+
+@media screen and (min-width:768px) {
+    .square {
+        border-radius: 25%;
+        width: 300px;
+        height: 300px;
+        border-left: 3px dotted red;
+        border-right: 3px dotted red;
+
+        border-top: 3px dotted black;
+        border-bottom: 3px dotted black;
+        background-color: gray;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .square {
+        border-radius: 50%;
+        width: 700px;
+        height: 700px;
+        border: 5px dashed peru;
+        margin-right: 0;
+
+        background: #2c3e50;
+        background: -webkit-linear-gradient(to right, #3498db, #2c3e50);
+        background: linear-gradient(to right, #3498db, #2c3e50);
+    }
+}
